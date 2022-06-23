@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.scheduler {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.scheduler__content {
+  flex: 0 0 79%;
+  background-color: #1c222a;
+}
+
+.scheduler__navigation {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.scheduler__navigation-btn {
+  padding: 15px;
+  background-color: #fff;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.scheduler__navigation-btn i {
+  color: #1c222a;
+}
+
+.scheduler__navigation-btn:hover {
+  background-color: #dcdcdc;
+  transition: all 0.1s ease-in;
+}
+
+.scheduler__main {}
+
+.scheduler__dates {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.scheduler__date {
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #dcdcdc;
+  border-bottom: 1px solid #1c222a;
+}
+
+.scheduler__tasks {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.scheduler__user {
+  background-color: #dcdcdc;
+  border: 1px solid #3a3f58;
+  min-height: 52px;
+}
+
+.scheduler__user {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.scheduler__user div {
+  width: 90%;
+  line-height: 25px;
+}
+
+.scheduler__workflow {
+  background-color: #fff;
+  border-bottom: 1px solid #1c222a;
+}
+
+.scheduler__workflow-elem {
+  background-color: #edb021;
+  min-height: 52px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  font-weight: 500;
+  border-bottom: 1px solid #1c222a;
+}
+
+.scheduler__workflow-elem:hover {
+  cursor: pointer;
+}
+
+.scheduler__workflow-elem:last-child {
+  border-bottom: none;
+}
+
+.scheduler__user, .scheduler__workflow {
+  text-align: center;
+}
+
+.scheduler__backlog {
+  flex: 0 0 20%;
+  min-width: 288px;
+  background-color: #edb021;
+  color: black;
+  padding: 10px 20px;
+  display: none;
+  overflow-y: scroll;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.scheduler__backlog h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 0;
+  padding: 30px 0 15px 0;
+}
+
+.scheduler__backlog-task {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.scheduler__backlog-task:hover {
+  cursor: pointer;
+  background-color: #f7f393;
+  transition: all 0.1s ease-in;
+}
+
+.dragover {
+  background-color: rgb(217, 219, 233);
+}
+
+.prompt {
+  height: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(152, 161, 155);
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.05s ease-in;
+  border-radius: 10px;
+}
+
+.scheduler__backlog-task:hover .prompt {
+  z-index: 1;
+  visibility: visible;
+  height: 30px;
+}
+
+.search {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 5px 30px;
+  text-align: center;
+  border: none;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1499px) {}
+
+@media (max-width: 1399px) {}
+
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 575px) {}

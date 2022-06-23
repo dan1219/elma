@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Elma-test</title>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/5e891e9288.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="scheduler">
+    <div class="scheduler__content">
+        <div class="scheduler__navigation">
+          <div class="scheduler__navigation-btn scheduler__navigation-left-btn" id="btn-left"><i class="fa-solid fa-arrow-left-long"></i></div>
+          <div class="scheduler__navigation-btn scheduler__navigation-right-btn" id="btn-right"><i class="fa-solid fa-arrow-right-long"></i></div>
+        </div>
+        <div class="scheduler__main">
+            <div class="scheduler__dates">
+              <div></div>
+              <div class="scheduler__date"></div>
+              <div class="scheduler__date"></div>
+              <div class="scheduler__date"></div>
+              <div class="scheduler__date"></div>
+              <div class="scheduler__date"></div>
+              <div class="scheduler__date"></div>
+              <div class="scheduler__date"></div>
+            </div>
+            <div class="scheduler__tasks" id="scheduler__tasks">
+            </div>
+        </div>
+    </div>
+    <div class="scheduler__backlog" id="backlog" ondrop="true">
+
+      <h2 class="scheduler__backlog-title">BACKLOG</h2>
+      <input type='text' class="search" id="search"placeholder="Поиск">
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
